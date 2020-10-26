@@ -13,8 +13,123 @@
     </scrip>
   </head>
   <body>
-    <p>
-      Hallo. Hier wird bald noch mehr kommen!
-    </p>
+    <div class="bg">
+      <div class="container">
+        <h1>Hi there</h1>
+        <h2>I'm Andrew Tunnecliffe</h2>
+        <p>If you're looking for someone who:</p>
+        <ul>
+            <li>is an expert coder</li>
+            <li>a certified Splunk ninja</li>
+            <li>a champion of incident response</li>
+            <li>a master of malware analysis</li>
+	          <li>an advocate of automation</li>
+            <li>lives to correlate logs</li>
+            <li>has an IT degree and a federal government security clearance</li>
+        </ul>
+        <p>Then we probably should get in touch.</p>
+        
+        <div class="contact">
+        <a href="mailto:andrew.207@gmail.com" class="email">Email</a>
+        <a href="http://www.linkedin.com/in/atunnecliffe" class="linkedin">LinkedIn</a>
+        <a href="http://codepen.io/atunnecliffe/" class="codepen">CodePen</a>
+        <a href="http://atunnecliffe.com/res/" class="resume">Résumé</a>
+        </div>
+      </div>
+      <div class="css">
+        <style id="styles" contenteditable style="display:block;white-space:pre;color:black;max-height:100%;overflow-y:auto;overflow-x:none;">
+        </style>
+      </div>
+    </div>
+    <script>
+      var css = ['html,',
+        'body {',
+      '  padding: 0;',
+        '  margin: 0;',
+        '}',
+        '',
+        '#styles {',
+        '  position: absolute;',
+        '  padding: 0 5px;',
+        '  background:rgba(240,240,240,0.8);',
+        '  top: 0;',
+        '  right: 0;',
+        '  z-index:1;',
+        '}',
+        '',
+        '.container {',
+        '  z-index:2;',
+        '  position: absolute;',
+        '  font-size: large;',
+        '  font-weight: 300;',
+        '  background: rgba(50, 50, 50, 0.9);',
+        '  color: #eee;',
+        '  border-radius: 3px;',
+        '  padding: 20px 50px;',
+        '  margin: 2% 0 0 10%;',
+        '}',
+        '',
+        'a,',
+        'p {',
+        '  font-family: \'Open Sans\';',
+        '}',
+        'a {',
+        '  color: rgb(100, 150, 250);',
+        '  transition: 0.4s ease;',
+        '  padding: 0 10px;',
+        '}',
+        '',
+        '.contact {',
+        '  text-align: center;',
+        '}',
+        '',
+        'a:hover {',
+        '  color: lightblue;',
+        '}',
+        '',
+        'h1,',
+        'h2 {',
+        '  font-weight: 300;',
+        '}',
+        '',
+        'h1 {',
+        '  font-family: \'Roboto Slab\', sans-serif;',
+        '}',
+        '',
+        '.bg {',
+        '  height: 100%;',
+        '  width: 100%;',
+        '  background: 50% 50% / cover;',
+        '  background-image: url("images/title.jpg");',
+        '  position: absolute;',
+        '}',
+        '',
+        '',
+        'Thanks for watching my site code itself!!',
+        '        - Andrew Tunnecliffe'
+      ];
+
+      var i = 0;
+      var j = 0;
+      
+      function write() {
+        var obj = document.getElementById("styles");
+        if (j < css[i].length) {
+          obj.innerText += css[i][j];
+          obj.scrollTop = obj.scrollHeight;
+          j++;
+          setTimeout(write, Math.floor((Math.random() * 50) + 10));
+        } else {
+          j = 0;
+          if (i < css.length - 1) {
+            i++;
+            obj.innerText += "\r\n";
+            obj.scrollTop = obj.scrollHeight;
+            write();
+          }
+        }
+      }
+      write();
+    </script>
   </body>
 </html>
