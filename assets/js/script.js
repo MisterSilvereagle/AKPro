@@ -61,11 +61,14 @@ var css = ['html,',
   '  width: 100%;',
   '  background: 50% 50% / cover;',
   '  background-image: url("/AKPro/assets/images/bg.jpg");',
+  '  background-size: 100%;',
   '  position: absolute;',
   '}',
   '',
   '',
-  'Thanks for watching our site code itself!!',
+  'Danke dass Du unserer Seite zugesehen hast,',
+  'wie sie sich selbst programmiert!!',
+  '',
 ];
 
 var i = 0;
