@@ -49,7 +49,7 @@ var css = [
   '',
   'a {',
   '  color: #f6abb6;',
-  '  padding:-right: 10px;',
+  '  padding-right: 10px;',
   '}',
   '',
   'a:hover {',
