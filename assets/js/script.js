@@ -1,6 +1,4 @@
-var css = [
-  'html,',
-  'body {',
+var css = ['html, body {',
   '  padding: 0;',
   '  margin: 0;',
   '}',
