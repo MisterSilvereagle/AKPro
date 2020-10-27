@@ -38,7 +38,7 @@ var css = [
   '',
   '.nice-font {',
   '  font-family: \"Balsamiq Sans\", cursive;',
-  '  color: rgba:(255, 154, 162, 1);',
+  '  color: rgba(255, 154, 162, 1);',
   '  transition: 0.4s ease;',
   '  padding: 0 10px;',
   '}',
